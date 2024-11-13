@@ -1,11 +1,15 @@
+// habits-model.js
 import { habits } from '../mock/habits.js';
 import { status } from '../const.js';
 
 export default class HabitsModel {
   boardhabits = habits;
 
-  getHabits() {
-    return this.boardhabits;
+  getHabits(filterStatus = 'all') {
+    if (filterStatus === 'all') {
+      return this.boardhabits;
+    }
+    return this.boardhabits.filter(habit => habit.status === filterStatus);
   }
 
   addHabit(habit) {
