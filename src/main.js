@@ -1,6 +1,6 @@
 // main.js
 import { render, RenderPosition } from './framework/render.js';
-import HabitsBoardPresenter from './presenter/habits-board-presenter.js'; // Правильный путь
+import HabitsBoardPresenter from './presenter/habits-board-presenter.js';
 import FormHabitAddComponent from './view/form-habits-add-component.js';
 
 const bodyContainer = document.querySelector('.board-app');
